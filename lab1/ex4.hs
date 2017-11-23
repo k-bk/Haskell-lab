@@ -16,7 +16,8 @@ min3Int (a, b, c) =
     min2Int(min2Int (a,b), min2Int (b,c))
 
 -- 3.5
---toUpper :: Char -> Char
+toUpper :: Char -> Char
+toUpper ch = 
 
 --toLower :: Char -> Char
 
@@ -24,9 +25,5 @@ min3Int (a, b, c) =
 isDigit :: Char -> Bool
 isDigit ch = ch <= '9' && ch >= '0'
 
-charToNum :: Char -> Int
-charToNum ch = if isDigit ch 
-    then ch - '0' 
-    else -1
-
+--charToNum :: Char -> Int
 
