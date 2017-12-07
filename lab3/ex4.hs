@@ -5,3 +5,9 @@ evalFuncListAt :: a -> [a -> b] -> [b]
 evalFuncListAt x [] = []
 evalFuncListAt x (f:fs) = f x : evalFuncListAt x fs
 
+displEqs :: (Double -> Double, Double -> Double)
+displEqs = (\t -> 4 * t^2 + 2 * t, \t -> 3 * t^2)
+
+funcListExt :: [Double -> Double]
+funcListExt = (\t -> sqrt (1+t)) : funcList
+
